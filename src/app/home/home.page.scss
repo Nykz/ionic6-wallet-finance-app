@@ -1,0 +1,103 @@
+ion-header {
+  background: transparent;
+  ion-item {
+    --background: transparent;
+    ion-avatar {
+      background: white;
+    }
+  }
+}
+
+ion-content {
+  * {
+    font-family: lato;
+  }
+
+  .main-header {
+    height: 45vh;
+    width: 150%;
+    background: linear-gradient(90deg, var(--ion-color-tertiary) 10%, var(--ion-color-primary) 100%);
+    box-shadow: 0 1px 10px var(--ion-color-light);
+    border-radius: 0 0 50% 50%;
+    margin-left: -14vh;
+    margin-top: -60px;
+  }
+  ion-grid {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(10vh);
+    padding-bottom: 8vh;
+    ion-row {
+      ion-col {
+        ion-label {
+          ion-note {
+            font-size: 0.7rem;
+          }
+          ion-chip {
+            ion-label {
+              font-size: 1.4rem;
+              font-weight: bold;
+              letter-spacing: 0.5px;
+              text-shadow: 1px 1px 1px var(--ion-color-medium);
+            }
+          }
+          b {
+            font-size: 1.2rem;
+          }
+        }
+        ion-button {
+          height: 3em !important;
+          transform: translateY(10%);
+          text-transform: none;
+          ion-text {
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px var(--ion-color-medium);
+          }
+          ion-icon {
+            font-size: 1rem;
+          }
+        }
+        ion-card {
+          box-shadow: -1px 11px 13px -6px rgb(87, 86, 86);
+          border-radius: 10px !important;
+          margin: 10px 0;
+          ion-thumbnail {
+            width: 8vh;
+            height: 8vh;
+            border-radius: 20px;
+            img {
+              width: 4vh;
+              height: 4vh;
+              transform: translateY(50%);
+            }
+          }
+          ion-card-content {
+            ion-label {
+              font-weight: bold;
+              text-shadow: 1px 1px 1px var(--ion-color-medium);
+              letter-spacing: 0.5px;
+            }
+          }
+        }
+      }
+    }
+    ion-list {
+      background: transparent;
+      ion-item {
+        width: 95%;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 2vh;
+        p {
+          font-size: 0.65rem;
+        }
+        ion-text {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
